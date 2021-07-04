@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+    
+    db:
+        image: postgres:11
+        restart: always
+        environment:
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: academicstoredb
+        ports:
+            - 5432:5432
+        networks: 
+            - my-network
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8168:8080
+        networks: 
+            - my-network
+
+    academicstoreapi:
+        image: jvinix/academicstore-api
+        restart: always
+        environment: 
+            TZ: America/Toronto
+            SPRING_DATASOURCE_URL: jdbc:postgresql://academicstore_api_db_1:5432/academicstoredb
+            SPRING_DATASOURCE_USERNAME: postgres
+            SPRING_DATASOURCE_PASSWORD: postgres
+        ports:
+            - 8167:8167
+        command: mvn spring-boot:run
+        networks: 
+            - my-network
+
+networks:
+    my-network:
+        driver: bridge
+
