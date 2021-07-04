@@ -17,7 +17,7 @@ Note: On Windows you might need to re-start after the docker install to ensure t
 
 2. ###### Download docker compose file
 
-Download the file called `docker-compose.yaml` located in this repository. You can place it in any folded. Keep in mind you will need it to install, stop, and restart the containers.
+Download the file called `docker-compose.yaml` located in this repository. You can place it in any folder, but keep in mind you will need it to install, stop, and restart the containers.
 
 3. ###### Run docker compose
 
@@ -29,6 +29,8 @@ Open a command line tool and run the following command in the same folder you pl
 
   _After all automatic downloads and installations, please wait 10-15 seconds until everything settles up. Then navigate to http://localhost:8167/swagger-ui.html in your favorite browser and enjoy! Adminer will be available in  http://localhost:8168_
 
+
+4. ###### How to Stop, Start, and Remove
 
 * To stop them all run: `docker-compose stop`
 
