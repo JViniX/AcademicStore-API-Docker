@@ -1,9 +1,7 @@
 ## Academic Store - API
 
 This is a Store Backend API available only for Academic Purposes.
-Fell free to download and use it to enhance your frontend development skills, 
-in any programming language and framework, such as Node.JS, JavaScript, Swift, 
-Dart, C#, Python, etc.
+Feel free to download and use it to enhance your frontend development skills in any programming language and framework, such as Node.JS, JavaScript, Swift, Dart, C#, Python, etc. It is the beauty of the RESTFul API, wide compatibility.
 
 ### How to install locally
 
