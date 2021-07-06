@@ -8,6 +8,7 @@ services:
         environment:
             POSTGRES_PASSWORD: postgres
             POSTGRES_DB: academicstoredb
+        hostname: academicstore_db
         ports:
             - 5432:5432
         networks: 
@@ -26,9 +27,11 @@ services:
         restart: always
         environment: 
             TZ: America/Toronto
-            SPRING_DATASOURCE_URL: jdbc:postgresql://academicstore-api-docker_db_1:5432/academicstoredb
+            SPRING_DATASOURCE_URL: jdbc:postgresql://academicstore_db:5432/academicstoredb
             SPRING_DATASOURCE_USERNAME: postgres
             SPRING_DATASOURCE_PASSWORD: postgres
+        depends_on:
+            - db
         ports:
             - 8167:8167
         command: mvn spring-boot:run
@@ -38,4 +41,3 @@ services:
 networks:
     my-network:
         driver: bridge
-
