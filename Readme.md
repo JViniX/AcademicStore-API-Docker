@@ -25,7 +25,9 @@ Open a command line tool and run the following command in the same folder you pl
   
     _It brings up also the **PostgreSQL** database and the **Adminer**, a web tool to allow you manage databases._
 
-  _After all automatic downloads and installations, please wait 10-15 seconds until everything settles up. Then navigate to http://localhost:8167/swagger-ui.html in your favorite browser and enjoy! Adminer will be available in  http://localhost:8168_
+ Note: After all automatic downloads and installations, please wait 10-15 seconds until everything settles up. Then navigate to http://localhost:8167/swagger-ui.html in your favorite browser and enjoy! The initial password of the `admin` user is `123456`.
+  
+ Note: Adminer will be available in  http://localhost:8168 The default user is `postgres` and its password is `postgres`
 
 
 4. #### How to Stop, Start, and Remove
