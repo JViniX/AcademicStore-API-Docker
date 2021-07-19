@@ -15,11 +15,11 @@ Note: On Windows you might need to re-start after the docker install to ensure t
 
 2. #### Download docker compose file
 
-Download the file called `docker-compose.yaml` located in this repository. You can place it in any folder, but keep in mind you will need it to install, stop, and restart the containers.
+Please clone or download this repository (on the green button called "Code", on the top). You can place it in any folder, but keep in mind you will need it to install, stop, and restart the containers.
 
 3. #### Run docker compose
 
-Open a command line tool and run the following command in the same folder you placed the `docker-compose.yaml` file.
+Open a command-line tool and run the following command into the same folder you find the `docker-compose.yaml` file.
 
 * To install all needed containers run:`docker-compose up -d`. 
   
